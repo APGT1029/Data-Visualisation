@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+lang = 'python', 'c++', 'java', 'pearl', 'scala', 'lisp'
+usage = [10,8,6,4,2,1]
+expl = (0.1,0,0,0,0,0)
+
+colours = ['cyan','purple','red','orange','yellow', 'green' ]
+
+plt.pie(usage, labels = lang, startangle= 15, shadow= True, colors= colours, explode= expl)
+plt.title('programming languages & their usage', fontsize = 15)
+
+plt.axis('equal')
+plt.show()
