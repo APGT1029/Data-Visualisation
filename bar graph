@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+lang = ['python', 'c++', 'java', 'pearl', 'scala', 'lisp']
+usage = [10,8,6,4,2,1]
+
+colours = ['Blue','purple','red','orange','yellow', 'green' ]
+
+plt.bar(lang, usage,color = colours)
+plt.title('programming languages & their usage', fontsize = 15)
+
+plt.xlabel('programming languages', fontsize = 15)
+plt.ylabel('their usage', fontsize = 15)
+
+plt.grid(True)
+plt.show()
