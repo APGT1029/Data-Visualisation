@@ -1,0 +1,8 @@
+import matplotlib.pyplot as plt
+
+x = (' ','python', 'c++', 'java', 'pearl', 'scala', 'lisp') #added extra blank space at first for better understanding
+y = [0,10,8,6,4,2,1] #value of the first blank space is 0 so that the graph does't collapse in a line
+
+plt.fill(x,y,color = 'blue')
+plt.grid(True)
+plt.show()
