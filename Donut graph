@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+
+colours = ['cyan','purple','red','orange','yellow', 'green' ]
+x = ('python', 'c++', 'java', 'pearl', 'scala', 'lisp')
+y = [10,8,6,4,2,1]
+
+plt.pie(y,labels= x,colors= colours)  #we will use a pie chart and add a background coloured circle smaller than the pie chart at the centre to make it look like a donut
+donut = plt.Circle((0,0), 0.7, color= 'white')  #adding a circle of same colour of the bakcground of the result window so that the pie chart looks like a donut
+z = plt.gcf()
+z.gca().add_artist(donut)
+plt.show()
